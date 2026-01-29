@@ -1,0 +1,65 @@
+:root{
+	--primary-1: #ff4200; /* orange */
+	--primary-2: #72bf44; /* green */
+	--primary-3: #7536f0; /* purple */
+	--primary-4: #000000; /* black */
+
+	--accent-1: #1acfbf;
+	--accent-2: #05b9f0;
+	--accent-3: #d6084d;
+	--accent-4: #d9fa4f;
+
+	--bg: #ffffff;
+	--muted: #666;
+	--max-width: 1100px;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:var(--primary-4); background:var(--bg);}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+
+.site-header{border-bottom:1px solid #eee;background:linear-gradient(90deg,var(--primary-3),var(--primary-1));color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.brand h1{margin:0;font-size:1.4rem;letter-spacing:0.04em}
+.brand .tag{margin:0;font-size:0.85rem;opacity:0.95}
+.nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:1rem}
+.btn-muted{background:rgba(255,255,255,0.12);padding:.45rem .75rem;border-radius:6px}
+
+.hero{padding:3rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+.hero-copy h2{font-size:2rem;margin:0 0 .75rem}
+.hero-copy p{color:var(--muted);line-height:1.5}
+.hero-actions{margin-top:1rem}
+
+.btn{display:inline-block;padding:.7rem 1rem;border-radius:8px;text-decoration:none;font-weight:600}
+.btn-primary{background:var(--primary-1);color:#fff}
+.btn-outline{border:2px solid rgba(0,0,0,0.08);background:transparent;color:var(--primary-4)}
+.btn-cta{background:linear-gradient(90deg,var(--primary-1),var(--primary-3));color:#fff;padding:.9rem 1.2rem;border-radius:10px;display:inline-block}
+
+.hero-visual img{width:100%;height:auto;border-radius:12px;box-shadow:0 10px 30px rgba(117,54,240,0.12)}
+
+.section{padding:2.2rem 0}
+.cards{display:flex;gap:1rem}
+.card{flex:1;padding:1.1rem;border-radius:10px;background:#fff;border:1px solid #eee;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+.card h4{margin:0 0 .5rem}
+
+.apply-section .apply-card{display:grid;grid-template-columns:180px 1fr;gap:1rem;align-items:center;padding:1rem;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.98),#fff);border:1px solid #f0f0f0}
+.apply-media img{width:100%;height:auto;border-radius:8px}
+.apply-body h3{margin-top:0}
+.apply-benefits{list-style:disc;margin:0.6rem 0 1rem 1.25rem;color:var(--muted)}
+.more-links{margin-top:1rem}
+.more-links ul{padding-left:1.1rem}
+.muted.small{color:var(--muted);font-size:0.9rem}
+
+.site-footer{border-top:1px solid #eee;padding:1.2rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-nav a{color:var(--muted);margin-left:1rem;text-decoration:none}
+
+@media (max-width:900px){
+	.hero-grid{grid-template-columns:1fr;}
+	.hero-visual{order:-1}
+	.apply-section .apply-card{grid-template-columns:1fr}
+	.footer-inner{flex-direction:column;gap:.6rem}
+	.cards{flex-direction:column}
+}
+
