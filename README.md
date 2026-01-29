@@ -5,7 +5,9 @@
 Tiny static demo site that hosts links to external resources, such as iForms. As an initial implementation, it contains one link, but the intention is to create a series of "Cards" that link to different business scenarios.
 
 ## Quick start
+- Just navigate to [https://github.com/Sacha00Z/fakewebsite](https://github.com/Sacha00Z/fakewebsite)
 
+## Testing Changes Locally
 - Requirements: `python3` (for a local preview), a browser, and Git.
 - Serve locally (from the repo root):
 
