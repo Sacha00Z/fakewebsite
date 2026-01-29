@@ -35,6 +35,19 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .btn-primary{background:var(--primary-1);color:#fff}
 .btn-outline{border:2px solid rgba(0,0,0,0.08);background:transparent;color:var(--primary-4)}
 .btn-cta{background:linear-gradient(90deg,var(--primary-1),var(--primary-3));color:#fff;padding:.9rem 1.2rem;border-radius:10px;display:inline-block}
+.btn-agent{background:var(--primary-2);color:#fff;padding:.5rem .8rem;border-radius:8px;text-decoration:none;font-weight:600}
+.btn-agent:hover{filter:brightness(.95)}
+
+/* Highlights / gallery */
+.highlights{padding:2rem 0}
+.image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem}
+.image-grid img{width:100%;height:160px;object-fit:cover;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+.highlight-caption{font-size:0.95rem;color:var(--muted);margin-top:.5rem;text-align:center}
+
+@media (max-width:900px){
+	.image-grid{grid-template-columns:repeat(2,1fr)}
+	.image-grid img{height:120px}
+}
 
 .hero-visual img{width:100%;height:auto;border-radius:12px;box-shadow:0 10px 30px rgba(117,54,240,0.12)}
 
